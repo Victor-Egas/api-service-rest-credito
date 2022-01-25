@@ -3,16 +3,16 @@ package com.producto.credito.service.Impl;
 import org.springframework.beans.factory.annotation.Autowired;
 
 import com.producto.credito.model.Credito;
-import com.producto.credito.repository.CuentaPlazoFijoRepository;
-import com.producto.credito.service.ICuentaPlazoFijoService;
+import com.producto.credito.repository.CreditoRepository;
+import com.producto.credito.service.ICreditoService;
 
 import reactor.core.publisher.Flux;
 import reactor.core.publisher.Mono;
 
-public class CuentaPlazoFijoService implements ICuentaPlazoFijoService {
+public class CreditoService implements ICreditoService {
 
 	@Autowired
-	private CuentaPlazoFijoRepository repo;
+	private CreditoRepository repo;
 	
 	@Override
 	public Flux<Credito> findAll() {

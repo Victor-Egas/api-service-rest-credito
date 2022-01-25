@@ -33,5 +33,11 @@ public class Credito {
 		
 		private Customer customer;
 
+		public String getId() {
+			return id;
+		}
+		
+		
+
 		 
 }

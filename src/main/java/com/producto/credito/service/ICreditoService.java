@@ -5,7 +5,7 @@ import com.producto.credito.model.Credito;
 import reactor.core.publisher.Flux;
 import reactor.core.publisher.Mono;
 
-public interface ICuentaPlazoFijoService {
+public interface ICreditoService {
 	
 	public Flux<Credito> findAll();
 
