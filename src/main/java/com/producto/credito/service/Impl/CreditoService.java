@@ -1,6 +1,7 @@
 package com.producto.credito.service.Impl;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 import com.producto.credito.model.Credito;
 import com.producto.credito.repository.CreditoRepository;
@@ -8,7 +9,7 @@ import com.producto.credito.service.ICreditoService;
 
 import reactor.core.publisher.Flux;
 import reactor.core.publisher.Mono;
-
+@Service
 public class CreditoService implements ICreditoService {
 
 	@Autowired
